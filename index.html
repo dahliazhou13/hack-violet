@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ivory Address Locator</title>
+        <link rel="stylesheet" href="./material/style/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+        <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
+        <script src="./material/js/store-data.js"></script>
+    </head>
+    <body>
+        <div class="greetings-container">
+            <h1>Welcome To <span style="color: purple">Ivory</span></h1>
+            <button onClick="showOrderModal()" class="btn">Place An order</button>
+          </div>
+
+        <div class="search-container">
+            <div class="search">
+                <input id="zip-code-input" type="text" placeholder="Enter zip" />
+                <i class="fas fa-search" onclick="searchStores()" ></i>
+            </div>
+        </div>
+        <div class="stores-list-container">
+          <div style="text-align: center;
+          margin-top: 6px;
+          color: purple;
+          font-weight: bold;">Avaliable Orders</div>
+
+            <div class="stores-list">
+                <div class="store-container">
+                    <div class="store-info-container">
+                        <div class="address">
+                            <span>8480 Beverly Blvd</span>
+                            <span>Los Angeles, CA 90048</span>
+                        </div>
+                       
+                        <div class="phone-number">356-345-4654</div>
+                    </div>
+                    <div class="store-number-container">
+                        <div class="store-number">
+                            1
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="map"></div>
+
+
+        <!-- order modal -->
+        <div id="order-modal" class="order-modal-container">
+            <div>
+              <button onclick="removeOrderModal()">X</button>
+            </div>
+            <h3>Good Afternoon, Jen!</h3>
+            <h5>What would you like to order today?</h5>
+            <p>You can click the button below to use your current location as your shipping address</p>
+            <div class="form-map" id="mapper">
+            </div>
+            <!-- <button id="showMe" class="btn">Use My Location</button> -->
+
+            <form id="Product">
+              <div id="DetailsList"></div>
+              <br>
+              <div class="input-field">
+                <textarea class="input_fields materialize-textarea" id="product name" type="text"></textarea>
+                <label class="active" for="product">What product do you need?</label>
+              </div>
+              <div class="input-field">
+                <input class="input_fields" id="brand" type="text">
+                <label class="active" for="brand">Do you have a preference for any  brand?</label>
+              </div>
+              <div class="input-field">
+                <input class="input_fields" id="image" type="text">
+                <label class="active" for="image">Add an Image (Optional)</label>
+              </div>
+              <div>
+                <label>
+                  <input name="group1" type="radio" />
+                  <span>Sanitary Items</span>
+                </label>
+                
+                <label>
+                  <input class="with-gap" name="group1" type="radio"  />
+                  <span>Antibiotics</span>
+                </label>
+               
+              </div>
+              
+              <div class="input-field">
+                <input class="input_fields" id="comment" type="text">
+                <label class="active" for="comment">Anything else you want me to keep in mind?</label>
+              </div>
+              
+              <button id="showMe" class="btn">Add my order</button>
+            </form>
+          </div>
+
+
+        <script src="./material/js/index.js"></script>
+        <!-- <script src="../main.js"></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVrli7ak5or6NSoSbNxLEud4c1xrYi0Uk&callback=initMap"
+        async defer></script>
+    </body>
+</html> 

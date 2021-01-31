@@ -1,13 +1,17 @@
 .container{
     width: 50%;
 }
+
+#showMe{
+  background-color: purple;
+}
 #map{
     height: 50vh;
     margin-bottom: 10px;
     display: none;
 }
 
-#locationList .card{
+#DetailsList .card{
     padding: 10px;
 }
 
@@ -23,6 +27,18 @@
   margin-right: 2px;
 }
 
+.input-field>textarea{
+  color: purple;
+  border-bottom: 1px solid purple !important;
+}
+
+.input-field>label{
+  color: purple !important;
+}
+
+[type="radio"]:checked+span:after, [type="radio"].with-gap:checked+span:after {
+  background-color: purple !important;
+}
 
 .navigation{
   display: flex;
@@ -47,13 +63,13 @@
 
 @media only screen and (min-width: 768px){
   .container{
-      width: 80%;
+    width: 80%;
       max-width: 800px;
   }
 }
 
-@media only screen and (max-width: 500px){
+@media all and (max-width: 600px){
   .container{
-    width: 95%;
+    width: 90%;
   }
 }

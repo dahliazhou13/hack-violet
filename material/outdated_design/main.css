@@ -1,0 +1,142 @@
+.container{
+    width: 50%;
+}
+#map{
+    height: 50vh;
+    margin-bottom: 10px;
+    display: none;
+}
+
+#locationList .card{
+    padding: 10px;
+}
+
+#toast-container{
+  top: 50%;
+  bottom: unset;
+}
+.toast{
+  background-color: rgba(0,0,0,.8);
+}
+.btn i{
+  font-size: 1rem;
+  margin-right: 2px;
+}
+
+
+.navigation{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  left: 0;
+  height: 55px;
+  position: absolute;
+  bottom: 0px;
+}
+
+.nav_home, .nav_user{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.nav_home:hover, .nav_user:hover{
+  cursor: pointer;
+  color: #cc22cc;
+}
+
+@media only screen and (min-width: 768px){
+  .container{
+      width: 80%;
+      max-width: 800px;
+  }
+}
+
+@media only screen and (max-width: 500px){
+  .container{
+    width: 95%;
+  }
+}
+
+
+
+
+
+
+
+/* order styles */
+.order-modal-container{
+  display: none;
+  position: absolute;
+    top: 0;
+    background-color: white;
+    width: 100%;
+    padding: 19px;
+}
+
+#DetailsList .card{
+  padding: 10px;
+}
+
+#toast-container{
+top: 50%;
+bottom: unset;
+}
+.toast{
+background-color: rgba(0,0,0,.8);
+}
+.btn i{
+font-size: 1rem;
+margin-right: 2px;
+}
+
+.input-field>textarea{
+color: purple;
+border-bottom: 1px solid purple !important;
+}
+
+.input-field>label{
+color: purple !important;
+}
+
+[type="radio"]:checked+span:after, [type="radio"].with-gap:checked+span:after {
+background-color: purple !important;
+}
+
+.navigation{
+display: flex;
+width: 100%;
+align-items: center;
+left: 0;
+height: 55px;
+position: absolute;
+bottom: 0px;
+}
+
+.nav_home, .nav_user{
+width: 50%;
+display: flex;
+justify-content: center;
+}
+
+.nav_home:hover, .nav_user:hover{
+cursor: pointer;
+color: #cc22cc;
+}
+
+@media only screen and (min-width: 768px){
+.container{
+  width: 80%;
+    max-width: 800px;
+}
+}
+
+@media all and (max-width: 600px){
+.container{
+  width: 90%;
+}
+}
+
+
+
+/* map designs */

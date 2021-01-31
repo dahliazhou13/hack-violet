@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Address Locator</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <link rel="stylesheet" href="order.css">
+</head>
+<body>
+  <div class="order-modal-container">
+    <h3>Good Afternoon, Jen!</h3>
+    <h5>What would you like to order today?</h5>
+    <p>You can click the button below to use your current location as your shipping address</p>
+    <div id="map">
+    </div>
+    <button id="showMe" class="btn">Use My Location</button>
+    
+    <form id="Product">
+      <div id="DetailsList"></div>
+      <br>
+      <div class="input-field">
+        <textarea class="input_fields materialize-textarea" id="product name" type="text"></textarea>
+        <label class="active" for="product">What product do you need?</label>
+      </div>
+      <div class="input-field">
+        <input class="input_fields" id="brand" type="text">
+        <label class="active" for="brand">Do you have a preference for any  brand?</label>
+      </div>
+      <div class="input-field">
+        <input class="input_fields" id="image" type="text">
+        <label class="active" for="image">Add an Image (Optional)</label>
+      </div>
+      <div>
+        <label>
+          <input name="group1" type="radio" />
+          <span>Sanitary Items</span>
+        </label>
+        
+        <label>
+          <input class="with-gap" name="group1" type="radio"  />
+          <span>Antibiotics</span>
+        </label>
+       
+      </div>
+      
+      <div class="input-field">
+        <input class="input_fields" id="comment" type="text">
+        <label class="active" for="comment">Anything else you want me to keep in mind?</label>
+      </div>
+      
+      <button id="showMe" class="btn">Add my order</button>
+    </form>
+    
+    <!-- <div class="navigation">
+      <div class="nav_home">
+         <svg width="30px" className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg>
+      </div>
+      <div class="nav_user">
+         <svg width="30px" className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+      </div> -->
+  </div>
+
+
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVrli7ak5or6NSoSbNxLEud4c1xrYi0Uk"></script>
+  <script src="order.js"></script>
+
+
+</body>
+</html>

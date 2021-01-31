@@ -1,4 +1,4 @@
-const mapArea = document.getElementById('map');
+const mapArea = document.getElementById('mapper');
 
 const $ = id => document.getElementById(id);
 
@@ -206,4 +206,13 @@ inputClicked = (result) => {
   
   M.updateTextFields();
   removeAddressCards();
+}
+
+
+function showOrderModal(){
+  $('order-modal').style.display = 'block';
+}
+
+function removeOrderModal(){
+  $('order-modal').style.display = 'none';
 }
