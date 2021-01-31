@@ -23,9 +23,37 @@
   margin-right: 2px;
 }
 
+
+.navigation{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  left: 0;
+  height: 55px;
+  position: absolute;
+  bottom: 0px;
+}
+
+.nav_home, .nav_user{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.nav_home:hover, .nav_user:hover{
+  cursor: pointer;
+  color: #cc22cc;
+}
+
 @media only screen and (min-width: 768px){
   .container{
-    width: 80%;
+      width: 80%;
       max-width: 800px;
+  }
+}
+
+@media only screen and (max-width: 500px){
+  .container{
+    width: 95%;
   }
 }
